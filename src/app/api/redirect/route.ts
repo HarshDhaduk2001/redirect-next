@@ -2,7 +2,7 @@ const handler = (req: any, res: any) => {
   if (req.method === "GET") {
     const redirectUrl =
       process.env.RedirectURL || "http://localhost:3000/destination";
-    res.status(308).setHeader("Location", redirectUrl);
+    res.writeHead(308, { Location: redirectUrl });
     res.end();
   } else {
     res.setHeader("Allow", ["GET"]);
