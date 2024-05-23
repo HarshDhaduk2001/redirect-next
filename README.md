@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Success URLs and 308 Status Code URLs
 
-## Getting Started
+Success URL
+A success URL is a webpage that returns a 200 status code when accessed. It typically represents a successful operation or completion of a process.
 
-First, run the development server:
+Example:
+Source URL: https://example.com/success/source
+Destination URL: https://example.com/success/destination
+When a user visits https://example.com/success/source and it will redirected to https://example.com/success/destination, indicating a successful navigation.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+308 Status Code URL
+A 308 status code URL is a webpage that returns a 308 status code when accessed. This status code indicates that the resource has permanently moved to a different location.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Example:
+Source URL: https://example.com/source
+Destination URL: https://example.com/destination
+When a user visits https://example.com/source, the network tab shows a response with a 308 status code. Despite this status code, the user is automatically redirected to https://example.com/destination.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Implementation
+To implement redirection for success URLs and handle 308 status codes effectively, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. clone code form github link which is provided to mail.
+2. install packages with the use of npm install
+3. run the project with command npm run dev and it will redirect you to http://localhost:3000
+4. after starting project you can check that with redirecting url from every project
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Conclusion
+By implementing the above steps, you can effectively handle success URLs and 308 status code URLs, providing seamless navigation and redirection for your users.
