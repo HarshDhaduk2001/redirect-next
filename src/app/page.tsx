@@ -1,23 +1,7 @@
-// pages/index.js
-import Link from "next/link";
-
-const HomePage = () => {
-  const links = [
-    { name: "Home Page", slug: "" },
-    { name: "Source Page", slug: "source" },
-    { name: "Example Page", slug: "example" },
-    // Add more links as needed
-  ];
-
+const HomePage: React.FC = () => {
   return (
-    <div>
-      <ul>
-        {links.map((link) => (
-          <li key={link.slug}>
-            <Link href={`/${link.slug}`}>{link.name}</Link>
-          </li>
-        ))}
-      </ul>
+    <div className="flex items-center justify-center h-screen">
+      <h1 className="font-medium text-lg">Welcome to home page</h1>
     </div>
   );
 };
