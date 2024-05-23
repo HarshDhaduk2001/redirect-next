@@ -1,4 +1,6 @@
-const handler = (req: any, res: any) => {
+import { NextApiRequest, NextApiResponse } from "next";
+
+const handler = (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === "GET") {
     const redirectUrl =
       process.env.RedirectURL || "http://localhost:3000/destination";
