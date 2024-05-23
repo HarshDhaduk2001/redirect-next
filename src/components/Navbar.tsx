@@ -23,14 +23,12 @@ const Navbar: React.FC = () => {
     { name: "Home Page", slug: "" },
     { name: "Source Page", slug: "success/source" },
     { name: "Example Page", slug: "success/example" },
-    // Add more links as needed
   ];
 
   const redirectLinks: NavLink[] = [
     { name: "Home Page", slug: "" },
     { name: "Source Page", slug: "source" },
     { name: "Example Page", slug: "example" },
-    // Add more links as needed
   ];
 
   return (

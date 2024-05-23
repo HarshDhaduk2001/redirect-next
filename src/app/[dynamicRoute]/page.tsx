@@ -35,7 +35,6 @@ const Page = ({ params }: PropsType) => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      dynamic
       <h1 className="font-medium text-lg">{`You are on page - ${dynamicRoute}`}</h1>
       {dynamicRoute === "destination" && (
         <h3>You are redirectd from source page to destination page with status code</h3>
